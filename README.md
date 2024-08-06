@@ -32,6 +32,7 @@ brew install stow
 ```bash
 git clone https://github.com/MikeGutty/dotfiles.git .dotfiles
 cd .dotfiles
+stow zsh # for zsh configuration
 stow alacritty # for alacritty configuration
 stow tmux # for tmux configuration
 ```
