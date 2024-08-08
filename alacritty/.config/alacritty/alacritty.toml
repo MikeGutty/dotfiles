@@ -6,11 +6,12 @@ program = "/bin/zsh"
 args = ["-l"]
 
 [window]
+dynamic_padding = true
 opacity = 0.9
 option_as_alt = "Both"
 
 [font]
-size = 12
+size = 14
 normal = { family = "Hack Nerd Font", style = "Regular" }
 italic = { family = "Hack Nerd Font", style = "Italic" }
 bold = { family = "Hack Nerd Font", style = "Bold" }
