@@ -70,7 +70,13 @@ ZSH_THEME=""
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf)
+plugins=(
+  git
+  fzf
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  eza-zsh
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,5 +110,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Oh my posh
-export PATH="$PATH:$HOME/.local/bin"
 eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/powerlevel10k_rainbow.omp.json')"
+
+# Rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(~/.rbenv/bin/rbenv init - zsh)"
+
+# Zoxide
+eval "$(zoxide init zsh)"
+
+# herdr
+export PATH="/Users/michael/.local/bin:$PATH"
