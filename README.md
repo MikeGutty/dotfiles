@@ -49,6 +49,19 @@ sudo dnf install tmux # Para Fedora o CentOS/RHEL 8+
 brew install tmux
 ```
 
+## Herdr
+
+Install Herdr checking the documentation on his webpage [Herdr](https://herdr.dev/)
+
+## Zoxide
+
+Install Zoxide via the package manager of your system.
+Check the instructions in the [Zoxide GitHub repository](https://github.com/ajeetdsouza/zoxide)
+
+## Rbenv
+
+Install Rbenv via git clone. Check the instructions in the [Rbenv GitHub repository](https://github.com/rbenv/rbenv)
+
 ## Installation configuration
 
 ```bash
@@ -73,18 +86,18 @@ For tmux only need to install the plugins after installing tmux.
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-2. Init a session with tmux
+1. Init a session with tmux
 
 ```bash
 tmux new -s session_name
 ```
 
-3. Source the configuration of tmux
+1. Source the configuration of tmux
 
 ```bash
 source ~/.config/tmux/tmux.conf
 ```
 
-4. Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
+1. Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
 
-5. The prefix is definited in the `~/.tmux.conf` file and in this case the prefix its <kbd>ctrl</kbd> + <kbd>Space</kbd>
+2. The prefix is definited in the `~/.tmux.conf` file and in this case the prefix its <kbd>ctrl</kbd> + <kbd>Space</kbd>
